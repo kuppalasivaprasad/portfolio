@@ -69,7 +69,7 @@
     { type: 'output', text: 'siva   Senior DevOps/CloudOps   10+ years    Running' },
     { type: 'gap' },
     { type: 'prompt', text: 'echo $CORE_STACK' },
-    { type: 'output', text: 'Kubernetes · Terraform · AWS · Azure · CI/CD' },
+    { type: 'output', text: 'Kubernetes · IaC · Multicloud Platforms · CI/CD · Automation · Configuration Management · Observability Stack' },
     { type: 'gap' },
     { type: 'prompt', text: 'cat clients.txt' },
     { type: 'output', text: 'AT&T · Dish Network · Bank of America · VISA' }
