@@ -1,4 +1,4 @@
-# Siva Prasad Kuppala — DevOps / CloudOps / SRE Portfolio
+# Siva Prasad Kuppala — DevOps / CloudOps / SRE
 
 A modern, responsive, single-page portfolio website built for a Senior DevOps / CloudOps / SRE Engineer profile. Static HTML/CSS/JS — no build step, no backend, no database.
 
