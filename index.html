@@ -107,7 +107,7 @@
     <div class="row g-4 about__grid">
       <div class="col-lg-7" data-animate="fade-up">
         <p class="about__text">Siva is a Senior DevOps / CloudOps / SRE Engineer with <strong>10+ years</strong> of experience spanning application support, release engineering, and full-lifecycle cloud infrastructure. His work sits at the intersection of <strong>cloud platforms (AWS &amp; Azure)</strong>, <strong>container orchestration (Kubernetes, Helm, Rancher)</strong>, and <strong>CI/CD automation (Jenkins, GitLab CI, Bamboo)</strong> — building the pipelines and platforms that let engineering teams ship safely and often.</p>
-        <p class="about__text">Across engagements with AT&amp;T, Dish Network, Bank of America, and VISA, he has planned zero-disruption Kubernetes upgrades, built Infrastructure-as-Code with Terraform, hardened environments with RBAC and Azure Firewall policies, and kept production reliable with Dynatrace, Splunk, and ELK observability. He's equally comfortable coordinating change control in a regulated banking environment as he is writing Helm charts for an EKS Fargate cluster.</p>
+        <p class="about__text">Across engagements with AT&amp;T, Dish Network, Bank of America, and VISA, he has planned zero-disruption Kubernetes upgrades, built Infrastructure-as-Code with Terraform, hardened environments with RBAC and Azure Firewall policies, and kept production reliable with Dynatrace, Grafana, VictoriaMetrics, Splunk, and ELK observability. He's equally comfortable coordinating change control in a regulated banking environment as he is writing Helm charts for an EKS Fargate cluster.</p>
         <div class="about__certs">
           <span class="cert-chip"><i class="fa-brands fa-microsoft"></i> Microsoft Certified · Azure Fundamentals</span>
           <span class="cert-chip"><i class="fa-brands fa-aws"></i> AWS Certified · Cloud Practitioner (Foundational)</span>
@@ -211,6 +211,8 @@
           <div class="skill-card__tags">
             <span class="tag">apm: dynatrace</span>
             <span class="tag">logs: splunk</span>
+            <span class="tag">metrics: victoria-metrics</span>
+            <span class="tag">visualization: grafana</span>
             <span class="tag">stack: elk</span>
           </div>
         </div>
@@ -294,11 +296,11 @@
             <li>Built Helm charts for Kubernetes components.</li>
             <li>Ran Kubernetes deployments across AWS Fargate EKS and on-prem Rancher clusters.</li>
             <li>Led planning and execution of Amazon EKS cluster upgrades, minimizing downtime through targeted deployment strategies.</li>
-            <li>Troubleshot pod-level issues using Logz.io and Dynatrace.</li>
+            <li>Troubleshot pod-level issues using Logz.io, Dynatrace, Grafana, and VictoriaMetrics.</li>
             <li>Participated in weekly production and hotfix deployments.</li>
           </ul>
           <div class="timeline__tech">
-            <span class="tag tag--tech">AWS</span><span class="tag tag--tech">Terraform</span><span class="tag tag--tech">EKS Fargate</span><span class="tag tag--tech">Helm</span><span class="tag tag--tech">Rancher</span><span class="tag tag--tech">GitLab CI</span><span class="tag tag--tech">Dynatrace</span>
+            <span class="tag tag--tech">AWS</span><span class="tag tag--tech">Terraform</span><span class="tag tag--tech">EKS Fargate</span><span class="tag tag--tech">Helm</span><span class="tag tag--tech">Rancher</span><span class="tag tag--tech">GitLab CI</span><span class="tag tag--tech">Dynatrace</span><span class="tag tag--tech">Grafana</span><span class="tag tag--tech">VictoriaMetrics</span>
           </div>
         </div>
       </div>
@@ -321,12 +323,12 @@
             <li>Troubleshot application and deployment issues using Splunk raw logs.</li>
             <li>Integrated Ansible with Jenkins pipelines for automated deployments, reducing deployment times.</li>
             <li>Created and scheduled batch/purge jobs using CA Technologies Workload Automation (Autosys).</li>
-            <li>Used Dynatrace for white-box and black-box monitoring.</li>
+            <li>Used Dynatrace, Grafana, and VictoriaMetrics for white-box and black-box monitoring.</li>
             <li>Participated in ARC (Application Resiliency Certification) fail-over and fall-back exercises.</li>
             <li>Partnered with dev teams to resolve production issues, including DB refreshes from PROD to DEV.</li>
           </ul>
           <div class="timeline__tech">
-            <span class="tag tag--tech">Jenkins</span><span class="tag tag--tech">Bitbucket</span><span class="tag tag--tech">XLR</span><span class="tag tag--tech">Splunk</span><span class="tag tag--tech">Ansible</span><span class="tag tag--tech">Autosys</span><span class="tag tag--tech">Dynatrace</span>
+            <span class="tag tag--tech">Jenkins</span><span class="tag tag--tech">Bitbucket</span><span class="tag tag--tech">XLR</span><span class="tag tag--tech">Splunk</span><span class="tag tag--tech">Ansible</span><span class="tag tag--tech">Autosys</span><span class="tag tag--tech">Dynatrace</span><span class="tag tag--tech">Grafana</span><span class="tag tag--tech">VictoriaMetrics</span>
           </div>
         </div>
       </div>
@@ -461,7 +463,7 @@
           <p class="project-card__label">Problem</p>
           <p>A regulated financial platform needed auditable, automated releases and proven disaster-recovery readiness.</p>
           <p class="project-card__label">Responsibilities</p>
-          <p>Built Jenkins pipelines; managed Bitbucket branching and PR review; configured XLR for release automation; integrated Ansible with Jenkins; scheduled Autosys batch jobs; monitored with Dynatrace and Splunk.</p>
+          <p>Built Jenkins pipelines; managed Bitbucket branching and PR review; configured XLR for release automation; integrated Ansible with Jenkins; scheduled Autosys batch jobs; monitored with Dynatrace, Grafana, VictoriaMetrics, and Splunk.</p>
           <p class="project-card__label">Architecture</p>
           <p>XLR orchestrates release workflows triggered from Jenkins pipelines, with Ansible handling automated deployment steps and Autosys managing scheduled batch/purge jobs downstream.</p>
           <p class="project-card__label">Business Impact</p>
