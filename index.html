@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siva Prasad Kuppala — Senior DevOps / CloudOps / SRE Engineer</title>
+<meta name="description" content="Siva Prasad Kuppala — Senior DevOps Engineer with 10+ years building CI/CD pipelines, Kubernetes platforms, and cloud infrastructure on AWS and Azure.">
+<meta name="keywords" content="DevOps Engineer, CloudOps, SRE, Kubernetes, Terraform, AWS, Azure, CI/CD, Site Reliability Engineering">
+<meta name="author" content="Siva Prasad Kuppala">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Siva Prasad Kuppala — Senior DevOps / CloudOps / SRE Engineer">
+<meta property="og:description" content="10+ years designing CI/CD pipelines, Kubernetes platforms, and multi-cloud infrastructure across AWS and Azure.">
+<meta property="og:image" content="images/og-cover.png"><!-- TODO: add a 1200x630 social preview image -->
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Bootstrap 5 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ STATUS BAR ============ -->
+<div class="status-bar">
+  <div class="container status-bar__inner">
+    <span class="status-bar__dot" aria-hidden="true"></span>
+    <span class="status-bar__text">all systems operational</span>
+    <span class="status-bar__sep">/</span>
+    <span class="status-bar__text status-bar__region"><i class="fa-solid fa-location-dot"></i> ap-south-1 · Hyderabad, IN</span>
+    <span class="status-bar__uptime ms-auto">uptime: 10y+</span>
+  </div>
+</div>
+
+<!-- ============ NAVBAR ============ -->
+<nav class="navbar navbar-expand-lg console-nav sticky-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="brand-prompt">~/</span><span class="brand-name">siva.kuppala</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link nav-link--cta" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header id="home" class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy" data-animate="fade-up">
+      <p class="eyebrow"><span class="eyebrow__dot"></span>SENIOR DEVOPS · CLOUDOPS · SRE ENGINEER</p>
+      <h1 class="hero__title">Siva Prasad<br>Kuppala</h1>
+      <p class="hero__summary">A dynamic and results-driven DevOps Engineer with 10+ years of experience designing, implementing, and maintaining CI/CD pipelines and cloud infrastructure. Focused on automating processes, optimizing deployments, and keeping systems scalable and reliable — while working closely with cross-functional teams to ship solutions that match business goals.</p>
+      <div class="hero__actions">
+        <a href="resume.pdf" download class="btn btn-primary-glow"><i class="fa-solid fa-download"></i> Download Resume</a>
+        <a href="#contact" class="btn btn-outline-glow"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+      </div>
+      <div class="hero__socials">
+        <a href="mailto:imksprasad@gmail.com" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+919666123311" class="social-icon" title="Phone"><i class="fa-solid fa-phone"></i></a>
+        <span class="social-icon social-icon--disabled" title="LinkedIn — TODO: add LinkedIn URL"><i class="fa-brands fa-linkedin-in"></i></span>
+        <span class="social-icon social-icon--disabled" title="GitHub — TODO: add GitHub URL"><i class="fa-brands fa-github"></i></span>
+      </div>
+    </div>
+
+    <!-- Signature element: terminal panel -->
+    <div class="hero__terminal" data-animate="fade-up" data-delay="150">
+      <div class="terminal-window">
+        <div class="terminal-window__bar">
+          <span class="dot dot--red"></span><span class="dot dot--yellow"></span><span class="dot dot--green"></span>
+          <span class="terminal-window__title">siva@infra:~</span>
+        </div>
+        <div class="terminal-window__body" id="terminalBody"></div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll-cue"><i class="fa-solid fa-chevron-down"></i></div>
+</header>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="section__eyebrow">01 · About</p>
+    <h2 class="section__title">Infrastructure is the product.</h2>
+    <div class="row g-4 about__grid">
+      <div class="col-lg-7" data-animate="fade-up">
+        <p class="about__text">Siva is a Senior DevOps / CloudOps / SRE Engineer with <strong>10+ years</strong> of experience spanning application support, release engineering, and full-lifecycle cloud infrastructure. His work sits at the intersection of <strong>cloud platforms (AWS &amp; Azure)</strong>, <strong>container orchestration (Kubernetes, Helm, Rancher)</strong>, and <strong>CI/CD automation (Jenkins, GitLab CI, Bamboo)</strong> — building the pipelines and platforms that let engineering teams ship safely and often.</p>
+        <p class="about__text">Across engagements with AT&amp;T, Dish Network, Bank of America, and VISA, he has planned zero-disruption Kubernetes upgrades, built Infrastructure-as-Code with Terraform, hardened environments with RBAC and Azure Firewall policies, and kept production reliable with Dynatrace, Splunk, and ELK observability. He's equally comfortable coordinating change control in a regulated banking environment as he is writing Helm charts for an EKS Fargate cluster.</p>
+        <div class="about__certs">
+          <span class="cert-chip"><i class="fa-brands fa-microsoft"></i> Microsoft Certified · Azure Fundamentals</span>
+          <span class="cert-chip"><i class="fa-brands fa-aws"></i> AWS Certified · Cloud Practitioner (Foundational)</span>
+        </div>
+      </div>
+      <div class="col-lg-5" data-animate="fade-up" data-delay="150">
+        <div class="stat-panel">
+          <div class="stat-panel__row">
+            <div class="stat-block">
+              <span class="stat-block__num">10+</span>
+              <span class="stat-block__label">years experience</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-block__num">5</span>
+              <span class="stat-block__label">employers</span>
+            </div>
+          </div>
+          <div class="stat-panel__row">
+            <div class="stat-block">
+              <span class="stat-block__num">7</span>
+              <span class="stat-block__label">enterprise clients</span>
+            </div>
+            <div class="stat-block">
+              <span class="stat-block__num">2</span>
+              <span class="stat-block__label">cloud platforms</span>
+            </div>
+          </div>
+          <ul class="stat-panel__list">
+            <li><i class="fa-solid fa-check status-icon"></i> CI/CD pipeline design &amp; automation</li>
+            <li><i class="fa-solid fa-check status-icon"></i> Kubernetes &amp; container orchestration</li>
+            <li><i class="fa-solid fa-check status-icon"></i> Infrastructure as Code</li>
+            <li><i class="fa-solid fa-check status-icon"></i> Cloud reliability &amp; monitoring</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section--alt">
+  <div class="container">
+    <p class="section__eyebrow">02 · Technical Skills</p>
+    <h2 class="section__title">The toolchain.</h2>
+    <div class="row g-4 skills-grid">
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-cloud"></i><h3>Cloud</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">platform: aws</span>
+            <span class="tag">platform: azure</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="60">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-cubes"></i><h3>Containers</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">runtime: docker</span>
+            <span class="tag">orchestrator: kubernetes</span>
+            <span class="tag">packaging: helm</span>
+            <span class="tag">platform: rancher2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="120">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-layer-group"></i><h3>Infrastructure as Code</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">iac: terraform</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-sliders"></i><h3>Configuration Management</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">config: ansible</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="60">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-code-branch"></i><h3>CI/CD</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">ci: gitlab-ci</span>
+            <span class="tag">ci: jenkins</span>
+            <span class="tag">ci: bamboo</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="120">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-chart-line"></i><h3>Monitoring</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">apm: dynatrace</span>
+            <span class="tag">logs: splunk</span>
+            <span class="tag">stack: elk</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-code-commit"></i><h3>Version Control</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">vcs: git</span>
+            <span class="tag">vcs: github</span>
+            <span class="tag">vcs: bitbucket</span>
+            <span class="tag">vcs: svn</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4" data-animate="fade-up" data-delay="60">
+        <div class="skill-card">
+          <div class="skill-card__head"><i class="fa-solid fa-terminal"></i><h3>Programming</h3></div>
+          <div class="skill-card__tags">
+            <span class="tag">shell: bash</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section">
+  <div class="container">
+    <p class="section__eyebrow">03 · Professional Experience</p>
+    <h2 class="section__title">Deployment history.</h2>
+
+    <div class="timeline">
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Tech Mahindra Ltd <span class="timeline__loc">· Hyderabad</span></h3>
+              <p class="timeline__client">Client: AT&amp;T</p>
+            </div>
+            <span class="timeline__date">Feb 2024 — Present</span>
+          </div>
+          <p class="timeline__role">CloudOps Engineer</p>
+          <ul class="timeline__list">
+            <li>Deploy, manage, and monitor Azure infrastructure components including Virtual Machines, Virtual Networks, and Storage Accounts.</li>
+            <li>Configure and manage Azure policies, Role-Based Access Control (RBAC), and Privileged Identity Management (PIM) to enforce security and compliance.</li>
+            <li>Set up Azure Monitor Agent (AMA) for monitoring Azure resources and applications.</li>
+            <li>Use Azure Firewall to enforce network segmentation and control traffic between Azure VNets.</li>
+            <li>Implement and manage inbound/outbound traffic filtering using application and network rule collections.</li>
+            <li>Support CI/CD pipelines, automating deployments and enabling efficient build and release processes.</li>
+            <li>Develop and maintain custom Packer templates for optimized, secure golden images across environments.</li>
+            <li>Manage and upgrade Azure Kubernetes Service (AKS) clusters — planning, executing, and validating upgrades with minimal disruption.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">Azure</span><span class="tag tag--tech">RBAC/PIM</span><span class="tag tag--tech">Azure Monitor</span><span class="tag tag--tech">Azure Firewall</span><span class="tag tag--tech">Packer</span><span class="tag tag--tech">AKS</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Tech Mahindra Ltd <span class="timeline__loc">· Hyderabad</span></h3>
+              <p class="timeline__client">Client: Dish Network (Sling)</p>
+            </div>
+            <span class="timeline__date">Oct 2022 — Jan 2024</span>
+          </div>
+          <p class="timeline__role">Cloud Engineer / Sr. DevOps Engineer / SRE</p>
+          <ul class="timeline__list">
+            <li>Deployed AWS services — EC2, ALB, Lambda, Step Functions, VPC, Route 53, IAM, S3, and EKS Fargate profiles — using Terraform.</li>
+            <li>Created and managed GitLab CI runners.</li>
+            <li>Developed gated and one-click deployment pipelines.</li>
+            <li>Built Helm charts for Kubernetes components.</li>
+            <li>Ran Kubernetes deployments across AWS Fargate EKS and on-prem Rancher clusters.</li>
+            <li>Led planning and execution of Amazon EKS cluster upgrades, minimizing downtime through targeted deployment strategies.</li>
+            <li>Troubleshot pod-level issues using Logz.io and Dynatrace.</li>
+            <li>Participated in weekly production and hotfix deployments.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">AWS</span><span class="tag tag--tech">Terraform</span><span class="tag tag--tech">EKS Fargate</span><span class="tag tag--tech">Helm</span><span class="tag tag--tech">Rancher</span><span class="tag tag--tech">GitLab CI</span><span class="tag tag--tech">Dynatrace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Infosys Ltd <span class="timeline__loc">· Hyderabad</span></h3>
+              <p class="timeline__client">Client: BOFA — Compliance Matter Document Management</p>
+            </div>
+            <span class="timeline__date">Feb 2020 — Oct 2022</span>
+          </div>
+          <p class="timeline__role">DevOps Engineer, Change Coordinator</p>
+          <ul class="timeline__list">
+            <li>Created and managed build pipelines with Jenkins.</li>
+            <li>Created, merged, and maintained code branches in Bitbucket; approved pull requests.</li>
+            <li>Configured XLR for release automation.</li>
+            <li>Troubleshot application and deployment issues using Splunk raw logs.</li>
+            <li>Integrated Ansible with Jenkins pipelines for automated deployments, reducing deployment times.</li>
+            <li>Created and scheduled batch/purge jobs using CA Technologies Workload Automation (Autosys).</li>
+            <li>Used Dynatrace for white-box and black-box monitoring.</li>
+            <li>Participated in ARC (Application Resiliency Certification) fail-over and fall-back exercises.</li>
+            <li>Partnered with dev teams to resolve production issues, including DB refreshes from PROD to DEV.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">Jenkins</span><span class="tag tag--tech">Bitbucket</span><span class="tag tag--tech">XLR</span><span class="tag tag--tech">Splunk</span><span class="tag tag--tech">Ansible</span><span class="tag tag--tech">Autosys</span><span class="tag tag--tech">Dynatrace</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Infosys Ltd <span class="timeline__loc">· Hyderabad</span></h3>
+              <p class="timeline__client">Client: VISA Intellilink</p>
+            </div>
+            <span class="timeline__date">Oct 2018 — Jan 2020</span>
+          </div>
+          <p class="timeline__role">DevOps Engineer</p>
+          <ul class="timeline__list">
+            <li>Worked on cloud migration from on-premises to AWS.</li>
+            <li>Integrated multiple tools and services with Jenkins.</li>
+            <li>Raised requests and incidents to other teams using ServiceNow (SNOW).</li>
+            <li>Worked closely with release teams on PROD configurations and deployments.</li>
+            <li>Managed batch jobs using Control-M.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">AWS</span><span class="tag tag--tech">Jenkins</span><span class="tag tag--tech">ServiceNow</span><span class="tag tag--tech">Control-M</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Larsen &amp; Toubro Infotech Limited <span class="timeline__loc">· Chennai</span></h3>
+              <p class="timeline__client">Client: Citi Treasury and Trade Solutions</p>
+            </div>
+            <span class="timeline__date">Aug 2017 — Aug 2018</span>
+          </div>
+          <p class="timeline__role">Application Support Engineer, NPS</p>
+          <ul class="timeline__list">
+            <li>Worked closely with dev teams to resolve application-related issues.</li>
+            <li>Raised incidents to upstream teams using ServiceNow.</li>
+            <li>Troubleshot application issues through log verification.</li>
+            <li>Performed post-patching activities including application sanity checks and service restarts.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">ServiceNow</span><span class="tag tag--tech">Application Support</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline__item" data-animate="fade-up">
+        <div class="timeline__node"></div>
+        <div class="timeline__card">
+          <div class="timeline__card-head">
+            <div>
+              <h3 class="timeline__company">Abhyudaya HR Business Solutions Pvt Ltd <span class="timeline__loc">· Hyderabad</span></h3>
+              <p class="timeline__client">Client: Tyson Foods</p>
+            </div>
+            <span class="timeline__date">Apr 2014 — Jul 2017</span>
+          </div>
+          <p class="timeline__role">Support Engineer</p>
+          <ul class="timeline__list">
+            <li>Created, modified, locked/unlocked, and managed user accounts and groups, handling authentication and authorization.</li>
+            <li>Assigned file and directory permissions to ensure data security.</li>
+            <li>Resolved support tickets based on priority.</li>
+            <li>Restarted services and processes on developer request.</li>
+          </ul>
+          <div class="timeline__tech">
+            <span class="tag tag--tech">User Administration</span><span class="tag tag--tech">Access Control</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section section--alt">
+  <div class="container">
+    <p class="section__eyebrow">04 · Projects</p>
+    <h2 class="section__title">Case studies from the field.</h2>
+    <div class="row g-4">
+
+      <div class="col-lg-4" data-animate="fade-up">
+        <div class="project-card">
+          <div class="project-card__tag">Azure · CloudOps</div>
+          <h3>Enterprise Azure Platform &amp; AKS Lifecycle Management</h3>
+          <p class="project-card__label">Overview</p>
+          <p>Ongoing management of AT&amp;T's Azure footprint at Tech Mahindra — infrastructure, security posture, and Kubernetes lifecycle.</p>
+          <p class="project-card__label">Problem</p>
+          <p>Enterprise Azure environments need strict access control, network segmentation, and AKS upgrades that don't disrupt live workloads.</p>
+          <p class="project-card__label">Responsibilities</p>
+          <p>Managed VMs, VNets, and storage; enforced RBAC/PIM policies; configured Azure Firewall segmentation; built golden images with Packer; planned and validated AKS upgrades.</p>
+          <p class="project-card__label">Architecture</p>
+          <p>Azure Firewall governs traffic between segmented VNets, Azure Monitor Agent feeds observability, and Packer-built golden images standardize compute across environments feeding into AKS.</p>
+          <p class="project-card__label">Business Impact</p>
+          <p>Strengthened security and compliance posture while keeping AKS upgrades non-disruptive to production traffic.</p>
+          <div class="project-card__tech">
+            <span class="tag tag--tech">Azure</span><span class="tag tag--tech">AKS</span><span class="tag tag--tech">RBAC/PIM</span><span class="tag tag--tech">Packer</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-animate="fade-up" data-delay="100">
+        <div class="project-card">
+          <div class="project-card__tag">AWS · Kubernetes</div>
+          <h3>AWS Cloud-Native Platform &amp; Pipeline Automation</h3>
+          <p class="project-card__label">Overview</p>
+          <p>Built and operated AWS infrastructure for Dish Network (Sling) using Terraform, EKS Fargate, and on-prem Rancher clusters.</p>
+          <p class="project-card__label">Problem</p>
+          <p>The team needed repeatable infrastructure-as-code, containerized workloads across hybrid environments, and safer release pipelines.</p>
+          <p class="project-card__label">Responsibilities</p>
+          <p>Provisioned EC2, ALB, Lambda, Step Functions, VPC, Route 53, IAM, S3, and EKS Fargate via Terraform; managed GitLab CI runners; wrote Helm charts; led EKS upgrade planning.</p>
+          <p class="project-card__label">Architecture</p>
+          <p>Terraform-provisioned VPC and EKS Fargate profiles run containerized services alongside on-prem Rancher clusters, fronted by ALB and orchestrated through gated/one-click GitLab CI pipelines.</p>
+          <p class="project-card__label">Business Impact</p>
+          <p>Gated and one-click pipelines streamlined releases; phased EKS upgrade strategy kept downtime to a minimum during cluster upgrades.</p>
+          <div class="project-card__tech">
+            <span class="tag tag--tech">Terraform</span><span class="tag tag--tech">EKS Fargate</span><span class="tag tag--tech">Helm</span><span class="tag tag--tech">GitLab CI</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4" data-animate="fade-up" data-delay="200">
+        <div class="project-card">
+          <div class="project-card__tag">Release Engineering · Compliance</div>
+          <h3>Release Automation for a Regulated Document Platform</h3>
+          <p class="project-card__label">Overview</p>
+          <p>DevOps and change coordination for Bank of America's Compliance Matter Document Management platform at Infosys.</p>
+          <p class="project-card__label">Problem</p>
+          <p>A regulated financial platform needed auditable, automated releases and proven disaster-recovery readiness.</p>
+          <p class="project-card__label">Responsibilities</p>
+          <p>Built Jenkins pipelines; managed Bitbucket branching and PR review; configured XLR for release automation; integrated Ansible with Jenkins; scheduled Autosys batch jobs; monitored with Dynatrace and Splunk.</p>
+          <p class="project-card__label">Architecture</p>
+          <p>XLR orchestrates release workflows triggered from Jenkins pipelines, with Ansible handling automated deployment steps and Autosys managing scheduled batch/purge jobs downstream.</p>
+          <p class="project-card__label">Business Impact</p>
+          <p>Ansible-Jenkins integration reduced deployment times; ARC fail-over/fall-back exercises validated resiliency for a compliance-critical system.</p>
+          <div class="project-card__tech">
+            <span class="tag tag--tech">Jenkins</span><span class="tag tag--tech">XLR</span><span class="tag tag--tech">Ansible</span><span class="tag tag--tech">Autosys</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="section__eyebrow">05 · Education</p>
+    <h2 class="section__title">Where it started.</h2>
+    <div class="education-card" data-animate="fade-up">
+      <div class="education-card__icon"><i class="fa-solid fa-graduation-cap"></i></div>
+      <div>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p class="education-card__meta">JNTUK, Andhra Pradesh · 2013</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section--alt">
+  <div class="container">
+    <p class="section__eyebrow">06 · Contact</p>
+    <h2 class="section__title">Let's talk infrastructure.</h2>
+    <div class="row g-4">
+      <div class="col-lg-6" data-animate="fade-up">
+        <div class="contact-card">
+          <a href="mailto:imksprasad@gmail.com" class="contact-row">
+            <i class="fa-solid fa-envelope"></i>
+            <div><span class="contact-row__label">Email</span><span class="contact-row__value">imksprasad@gmail.com</span></div>
+          </a>
+          <a href="tel:+919666123311" class="contact-row">
+            <i class="fa-solid fa-phone"></i>
+            <div><span class="contact-row__label">Phone</span><span class="contact-row__value">+91 96661 23311</span></div>
+          </a>
+          <div class="contact-row contact-row--static">
+            <i class="fa-solid fa-location-dot"></i>
+            <div><span class="contact-row__label">Location</span><span class="contact-row__value">Hyderabad, India</span></div>
+          </div>
+          <div class="contact-row contact-row--disabled">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div><span class="contact-row__label">LinkedIn</span><span class="contact-row__value">TODO: add LinkedIn profile URL</span></div>
+          </div>
+          <div class="contact-row contact-row--disabled">
+            <i class="fa-brands fa-github"></i>
+            <div><span class="contact-row__label">GitHub</span><span class="contact-row__value">TODO: add GitHub profile URL</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex" data-animate="fade-up" data-delay="150">
+        <div class="contact-cta">
+          <p>Have an infrastructure problem worth solving — a migration, a shaky pipeline, a cluster upgrade that needs a steady hand?</p>
+          <a href="resume.pdf" download class="btn btn-primary-glow w-100 justify-content-center"><i class="fa-solid fa-download"></i> Download Full Resume</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>&copy; <span id="year"></span> Siva Prasad Kuppala. Built with HTML, CSS &amp; vanilla JS.</p>
+    <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
